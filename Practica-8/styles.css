@@ -15,7 +15,7 @@ body{
 
 .form-container{
     width: 50%;
-    background-color: #161627;
+    background-color: #0b0904;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@ body{
 .login-container{
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #f6f2ef;
     padding: 20px;
     width: 30vw;
     border-radius: 15px;

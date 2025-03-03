@@ -8,7 +8,7 @@ body{
     color: white;
 }
 
-.food-container{
+.museo-container{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -75,3 +75,23 @@ button:hover{
     height: 20px;
     border-radius: 50%;
 }
+
+.eliminar-btn {
+    background-color: hsla(355, 77%, 37%, 0.253); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block; 
+    width: fit-content; 
+    margin-left: 0; 
+}
+
+
+.eliminar-btn:hover {
+    background-color: #8e131b;
+    transform: scale(1.05);
+}
+

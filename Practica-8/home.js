@@ -33,14 +33,37 @@ function postComment() {
 
 function mostrarComentarios() {
     const commentSection = document.getElementById('comment-section');
-    const comments = JSON.parse(localStorage.getItem('comments'))|| [];
+    const comments = JSON.parse(localStorage.getItem('comments')) || [];
+    const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
 
     commentSection.innerHTML = '';
 
-    comments.forEach((comment) => {
+    comments.forEach((comment, index) => {
         const comentarioSection = document.createElement("section");
         comentarioSection.classList.add("comentario")
-        comentarioSection.innerHTML = `<img src="${comment.image}" class="user-image"> <strong>${comment.name}</strong>  <br><p>${comment.timestamp}</p><br> ${comment.commentText}`;
+        comentarioSection.innerHTML = `
+            <img src="${comment.image}" class="user-image"> 
+            <strong>${comment.name}</strong>  
+            <br><p>${comment.timestamp}</p><br> 
+            ${comment.commentText}
+            ${comment.username === loggedUser.username ? `<button class="eliminar-btn" data-index="${index}" onclick="eliminarComentario(${index})">Eliminar</button>` : ""}
+        `;
         commentSection.appendChild(comentarioSection);
     });
 }
+
+function eliminarComentario(index) {
+    let comments = JSON.parse(localStorage.getItem('comments')) || [];
+    const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
+
+    if (comments[index].username !== loggedUser.username) {
+        alert("No tienes permiso para eliminar este comentario.");
+        return;
+    }
+
+    comments.splice(index, 1);
+    localStorage.setItem('comments', JSON.stringify(comments));
+    mostrarComentarios();
+}
+
+
