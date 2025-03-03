@@ -1,8 +1,8 @@
 //Users
 const users = [
-    {name: "Ivan Garcia", username: "ivanfou", password: "1234", image: "https://images.pexels.com/photos/6408361/pexels-photo-6408361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-    {name: "Saul Arguello", username: "saulau", password: "abcd", image: "https://images.pexels.com/photos/6630816/pexels-photo-6630816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"},
-    {name: "Ian Rios", username: "ianrios", password: "asdfg", image: "https://images.pexels.com/photos/6414910/pexels-photo-6414910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+    {name: "Ade Trejo", username: "adelinat", password: "1234", image: "https://images.pexels.com/photos/19435364/pexels-photo-19435364/free-photo-of-a-red-cat-with-a-collar-on-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
+    {name: "Mario Ruiz", username: "maruz", password: "abcd", image: "https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"},
+    {name: "Ana Lopez", username: "anitalz", password: "asdfg", image: "https://images.pexels.com/photos/6414910/pexels-photo-6414910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
 ]
 
 function logIn() {
