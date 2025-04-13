@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planificador de Viajes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Planificador de Viajes desde Cuatro Ciénegas</h1>
+    <form id="formulario">
+      <label>Origen:</label>
+      <input type="text" value="Cuatro Ciénegas" disabled />
+      
+      <label for="destino">Destino:</label>
+      <select id="destino" required>
+        <option value="Parras">Parras</option>
+        <option value="Viesca">Viesca</option>
+        <option value="Candela">Candela</option>
+        <option value="Guerrero">Guerrero</option>
+      </select>
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required />
+
+      <label for="transporte">Transporte:</label>
+      <select id="transporte" required>
+        <option value="autobus">Autobús</option>
+        <option value="uber">Uber</option>
+        <option value="renta">Renta de vehículo</option>
+      </select>
+
+      <label for="alojamiento">Alojamiento:</label>
+      <select id="alojamiento" required>
+        <option value="hotel">Hotel</option>
+        <option value="hostal">Hostal</option>
+        <option value="cabana">Cabaña</option>
+      </select>
+
+      <label for="personas">Número de personas:</label>
+      <select id="personas" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <button type="submit">Agregar viaje</button>
+    </form>
+
+    <section id="itinerario"></section>
+  </div>
+
+  <script type="module" src="App.js"></script>
+</body>
+</html>

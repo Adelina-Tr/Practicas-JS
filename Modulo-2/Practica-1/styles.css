@@ -1,0 +1,120 @@
+/* Fondo general con estilo de cielo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+  margin: 0;
+  padding: 0;
+  color: #2c3e50;
+}
+
+/* Contenedor principal con sombra y bordes redondeados */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffffcc;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Título con ícono */
+h1 {
+  text-align: center;
+  color: #34495e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+input, select {
+  padding: 0.6rem;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+}
+
+/* Botón principal */
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #219150;
+}
+
+/* Sección de itinerario */
+#itinerario {
+  margin-top: 2rem;
+}
+
+#itinerario h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Tarjeta de viaje */
+.viaje {
+  background: #f0f9ff;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #3498db;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.viaje strong {
+  color: #2d3436;
+}
+
+.viaje button.eliminar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.viaje button.eliminar:hover {
+  background: #c0392b;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.2rem;
+  }
+
+  .viaje {
+    font-size: 0.95rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
