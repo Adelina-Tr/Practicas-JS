@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdf6f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #5d4037;
+}
+
+#addOrderBtn {
+    background-color: #8d6e63;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#addOrderBtn:hover {
+    background-color: #6d4c41;
+}
+
+#orderList {
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#orderList li {
+    background-color: #fff3e0;
+    border: 1px solid #ffe0b2;
+    border-left: 8px solid #ffcc80;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+}
+
+#orderList li.completed {
+    background-color: #c8e6c9;
+    border-left-color: #81c784;
+}
